@@ -33,6 +33,7 @@ function SetVersion
         [string]$project
     )
 
+    "$project"
 	neon-build pack-version "$env:NF_ROOT\product-version.txt" "$env:NF_ROOT\Lib\$project\$project.csproj"
 }
 
@@ -63,7 +64,7 @@ function Publish
         $prerelease = ""
     }
 
-	nuget push -Source nuget.org "$env:NF_BUILD\nuget\$project.$version$prerelease.nupkg"
+	# nuget push -Source nuget.org "$env:NF_BUILD\nuget\$project.$version$prerelease.nupkg"
 }
 
 # Copy the version from [$/product-version] into [$/Lib/Neon/Common/Build.cs]
@@ -97,6 +98,8 @@ SetVersion Neon.Xunit
 SetVersion Neon.Xunit.Cadence
 SetVersion Neon.Xunit.Couchbase
 SetVersion Neon.Xunit.Kube
+
+exit 0
 
 # Build and publish the projects.
 
