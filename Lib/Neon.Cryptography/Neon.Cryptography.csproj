@@ -47,6 +47,7 @@
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
     <NoWarn>NU1605</NoWarn>
+    <DocumentationFile>bin\Release\Neon.Cryptography.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -42,7 +42,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeDoc|AnyCPU'">
-    <DocumentationFile>C:\src\neonKUBE\Lib\Neon.Nats\bin\Release\Neon.Nats.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Neon.Nats.xml</DocumentationFile>
     <DefineConstants />
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />

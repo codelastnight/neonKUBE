@@ -38,7 +38,7 @@ This is a cloned and slightly updated build of https://www.nuget.org/packages/SS
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeDoc|AnyCPU'">
-    <DocumentationFile>C:\src\neonKUBE\Lib\Neon.SSH.NET\bin\Release\Neon.SSH.NET.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Neon.SSH.NET.xml</DocumentationFile>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
     <NoWarn>NU1605</NoWarn>
